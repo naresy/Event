@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="left"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Displaypost">
+    <LinearLayout
+        android:layout_marginTop="0sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_marginTop="0sp"
+            android:id="@+id/close"
+            android:text="X"
+            android:textSize="10sp"
+            android:padding="5sp"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="250sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_close"
+            />
+
+
+    </LinearLayout>
+
+    <TextView
+
+        android:layout_marginLeft="20sp"
+        android:text=" Favourite"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20sp"
+        android:padding="10sp"
+        android:textSize="15sp"
+        android:id="@+id/more_fav"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/ic_icon_favroid"
+        android:layout_marginRight="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="20sp"
+        android:text=" Add calender"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20sp"
+        android:padding="10sp"
+        android:textSize="15sp"
+        android:id="@+id/more_addcalender"
+        android:layout_width="match_parent"
+        android:drawableStart="@drawable/ic_calnder_icon"
+        android:layout_marginRight="20sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginLeft="20sp"
+        android:text=" Favourite"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20sp"
+        android:padding="10sp"
+        android:textSize="15sp"
+        android:id="@+id/recent_post"
+        android:drawableStart="@drawable/ic_recent"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20sp"
+        android:layout_height="wrap_content" />
+
+
+</LinearLayout>

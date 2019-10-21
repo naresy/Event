@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".UseraSettingActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_profile_image"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:src="@drawable/ic_avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+    <EditText
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:hint="   First name"
+        android:textStyle="bold"
+        android:inputType="textAutoComplete"
+        android:layout_below="@+id/user_profile_image"
+        android:id="@+id/user_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:hint="   Last name"
+        android:textStyle="bold"
+        android:inputType="textAutoComplete"
+        android:layout_below="@+id/user_firstname"
+        android:id="@+id/user_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/user_Dateofbirth"
+        android:layout_below="@id/user_lastname"
+        android:hint="   Date of Birth"
+        android:textStyle="bold"
+        android:inputType="date"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:hint="   Address"
+        android:textStyle="bold"
+        android:inputType="textAutoComplete"
+        android:layout_below="@+id/user_Dateofbirth"
+        android:id="@+id/user_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/user_phone"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_below="@id/user_address"
+        android:hint="   Phone Number"
+        android:maxLength="10"
+        android:textStyle="bold"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:layout_below="@id/user_phone"
+        android:id="@+id/user_gender"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/male"
+            android:checked="true"
+            android:text="male"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/female"
+            android:checked="true"
+            android:text="Female"/>
+    </RadioGroup>
+    <EditText
+        android:id="@+id/user_bio"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:hint="   Bio"
+        android:inputType="textAutoComplete"
+        android:textStyle="bold"
+        android:layout_below="@id/user_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/user_linearlayout"
+        android:layout_below="@id/user_bio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/user_valid_location"
+        android:layout_weight="2"
+        android:layout_marginTop="10sp"
+        android:text="Get Location"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:background="@drawable/button_selector"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <EditText
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:id="@+id/user_location_view"
+            android:layout_marginRight="20sp"
+            android:hint="User location"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/user_update_information"
+        android:background="@drawable/button_selector"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10sp"
+        android:text="Update Information"
+        android:textColor="@android:color/white"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

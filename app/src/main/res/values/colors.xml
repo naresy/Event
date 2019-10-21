@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#133388</color>//fiord
+    <color name="colorPrimaryDark">#0B2663</color>//ebonyclay
+    <color name="colorAccent">#de7348</color>//red damask
+    <color name="white">#ffffff</color>//white
+    <color name="editText">#FFE3E7E7</color>
+    <color name="color_for_main">#FFFFE0</color>
+</resources>

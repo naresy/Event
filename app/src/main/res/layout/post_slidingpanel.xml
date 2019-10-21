@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+       android:id="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:text="Action"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:padding="8sp"
+        android:layout_height="wrap_content" />
+    <ScrollView
+        android:layout_below="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_below="@+id/action"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/user_post_title"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:hint="  Event Title"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/datelayout"
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/post_date_from"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:hint="  From Date"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:id="@+id/post_date_To"
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_weight="1"
+            android:hint="  To Date"
+            android:textStyle="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/post_time_from"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+                android:layout_weight="1"
+                android:hint=" From Time"
+                android:onClick="showTimePickerDialog"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/post_time_To"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+                android:layout_weight="1"
+                android:hint="  To Time"
+                android:onClick="showTimePickerDialog1"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    <RadioGroup
+        android:id="@+id/Post_repeatation"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/non_repeated"
+            android:checked="true"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Repeated"
+            android:checked="true"
+            android:clickable="true"
+            android:onClick="showpopup"
+            android:text="Repeated"/>
+    </RadioGroup>
+    <RadioGroup
+        android:id="@+id/Post_user_fee"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/free"
+            android:checked="true"
+            android:text="None"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Paid"
+            android:checked="true"
+            android:onClick="showpopup1"
+            android:clickable="true"
+            android:text="Paid"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<TextView
+    android:id="@+id/getlocation"
+    android:text="   Location"
+    android:textSize="20sp"
+    android:layout_marginTop="10sp"
+    android:layout_marginLeft="20sp"
+    android:textColor="@android:color/black"
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/full_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:layout_weight="1"
+            android:hint="Location here"
+            android:textColor="@android:color/black"
+            android:textStyle="italic"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="   Categories"
+            android:textSize="20sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginLeft="20sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Spinner
+            android:layout_marginTop="10sp"
+            android:id="@+id/post_Categories"
+            android:layout_weight="1"
+            android:layout_marginRight="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></Spinner>
+    </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="   Partner"
+                android:textSize="20sp"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="20sp"
+                android:textColor="@android:color/black"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:id="@+id/post_partner"
+                android:layout_marginTop="10sp"
+                android:layout_marginRight="20sp"
+                android:layout_weight="1"
+                android:hint="ErSathi.com"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>

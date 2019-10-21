@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".filterActivity"
+    android:orientation="vertical">
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/main_tab_bar_layout"
+        android:layout_width="match_parent"
+        android:background="@color/colorPrimary"
+        app:tabGravity="fill"
+        app:tabMode="scrollable"
+       android:theme="@style/Theme.AppCompat.NoActionBar"
+        android:layout_height="wrap_content"/>
+    <androidx.viewpager.widget.ViewPager
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/container">
+    </androidx.viewpager.widget.ViewPager>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/all_exercise_frag"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="10sp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:padding="5sp"-->
+<!--            android:text="Post time/date"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textStyle="bold" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/categories_plan"-->
+<!--            android:layout_marginLeft="10sp"-->
+<!--            android:padding="5sp"-->
+<!--            android:text="Categories"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--        <TextView-->
+<!--            android:id="@+id/location_frag"-->
+<!--            android:layout_marginLeft="10sp"-->
+<!--            android:padding="5sp"-->
+<!--            android:text="Location"-->
+<!--            android:textStyle="bold"-->
+<!--            android:textColor="@android:color/black"-->
+<!--            android:textAllCaps="true"-->
+<!--            android:layout_weight="1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content" />-->
+<!--        -->
+<!--    </LinearLayout>-->
+
+</LinearLayout>

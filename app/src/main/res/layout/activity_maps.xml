@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_height="match_parent"
+                android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/post_click_Image"
+                android:layout_width="match_parent"
+                android:layout_height="200sp"
+                android:background="@drawable/post_click_image"/>
+
+            <TextView
+                android:id="@+id/post_click_date"
+                android:layout_below="@+id/post_click_Image"
+                android:layout_marginTop="20sp"
+                android:hint="SEP 26"
+                android:layout_marginLeft="20sp"
+                android:textColor="@android:color/black"
+                android:layout_width="30sp"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/post_click_Title"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:padding="7sp"
+                android:hint="Title eg:Ersathi conference 2019"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:textSize="20sp"
+                android:layout_below="@id/post_click_Image"
+                android:layout_toRightOf="@+id/post_click_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/post_click_hosted"
+                android:layout_marginTop="10sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:padding="7sp"
+                android:hint=" Eg:hosted by lmaniya.com"
+                android:textColor="@android:color/black"
+                android:textAlignment="textStart"
+                android:textSize="10sp"
+                android:layout_below="@id/post_click_Title"
+                android:layout_toRightOf="@+id/post_click_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:id="@+id/layout_first"
+                android:layout_marginTop="10sp"
+                android:layout_below="@+id/post_click_hosted"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/post_interest_icon"
+                    android:layout_width="wrap_content"
+                    android:drawableTop="@drawable/ic_post_interested"
+                    android:text="Interested"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/post_going_icon"
+                    android:layout_width="wrap_content"
+                    android:text="Going"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:drawableTop="@drawable/ic_post_going"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/post_share_icon"
+                    android:layout_width="wrap_content"
+                    android:text="Share"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:drawableTop="@drawable/ic_post_share"
+
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:onClick="ShowPopup"
+                    android:layout_marginLeft="10sp"
+                    android:id="@+id/post_more_icon"
+                    android:layout_width="wrap_content"
+                    android:text="More"
+                    android:textColor="@android:color/black"
+                    android:textAlignment="center"
+                    android:drawableTop="@drawable/ic_post_more"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_second"
+                android:layout_marginTop="20sp"
+                android:orientation="vertical"
+                android:layout_below="@+id/layout_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:id="@+id/post_postby"
+                    android:padding="7sp"
+                    android:drawableStart="@drawable/ic_global_icon"
+                    android:text="  Public Event By:"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginLeft="20sp"
+                    android:layout_marginRight="20sp"
+                    android:id="@+id/post_postlocation"
+                    android:padding="7sp"
+                    android:drawableStart="@drawable/ic_user_profile_location"
+                    android:hint=" Location"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_third"
+                android:layout_below="@id/layout_second"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="20sp"
+                    android:layout_weight="1"
+                    android:id="@+id/post_postuser_interest"
+                    android:padding="7sp"
+
+                    android:hint="00"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Interest"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/post_postuser_going"
+                    android:padding="7sp"
+                    android:hint="00"
+                    android:layout_marginLeft="15sp"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="Going"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/post_postuser_share"
+                    android:padding="7sp"
+                    android:hint="00"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_weight="1"
+                    android:text="share"
+                    android:textColor="@android:color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <TextView
+            android:layout_marginTop="10sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:hint="DESCRIPTION"
+            android:layout_below="@id/layout_third"
+            android:id="@+id/post_click_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/layout_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_third"
+                android:layout_marginTop="20sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20sp"
+                    android:text="About the Venue"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+                <Button
+                    android:id="@+id/goople_type"
+                    android:layout_width="50sp"
+                    android:layout_height="50sp"
+                     android:background="@drawable/satellite_photo">
+                </Button>
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200sp"
+                    tools:context=".MapsActivity" />
+
+
+
+                <!--<include-->
+                    <!--android:id="@+id/maps"-->
+                    <!--layout="@layout/activity_maps"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="150sp"-->
+                    <!--android:layout_marginLeft="20sp"-->
+                    <!--android:layout_marginTop="10sp"-->
+                    <!--android:layout_marginRight="20sp"-->
+                    <!--android:baselineAligned="false"></include>-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/layout_fourth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/post_click_location_bymap"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Get Direction"
+                    android:textColorHint="@android:color/holo_blue_light"
+                    android:layout_marginRight="20sp"
+                    android:textAlignment="textEnd"
+                    android:drawableStart="@drawable/ic_get_direction"
+                    android:textColor="@android:color/black"
+                    />
+                <TextView
+                    android:layout_marginTop="10sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginLeft="20sp"
+                    android:id="@+id/post_click_phone"
+                    android:drawableStart="@drawable/ic_get_call"
+                    android:hint="9868474210"
+                    android:textColor="@android:color/holo_blue_light"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

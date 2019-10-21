@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginLeft="20sp"
+        android:padding="10sp"
+        android:text="Please select the price"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <RadioGroup
+        android:id="@+id/fee_structure"
+        android:padding="10dp"
+        android:background="@android:color/white"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fivehundred"
+            android:checked="true"
+            android:text="500"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thousand"
+            android:checked="true"
+            android:text="1000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fifteenhundred"
+            android:checked="true"
+            android:text="1500"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twothosand"
+            android:checked="true"
+            android:text="2000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/twentyfivehundred"
+            android:checked="true"
+            android:text="2500"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/threethousand"
+            android:checked="true"
+            android:text="3000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thirtyfivehundred"
+            android:checked="true"
+            android:text="3500"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourthousand"
+            android:checked="true"
+            android:text="4000"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fourtyfivehundred"
+            android:checked="true"
+            android:text="4500"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fivethousand"
+            android:checked="true"
+            android:text="5000"/>
+    </RadioGroup>
+
+
+</LinearLayout>

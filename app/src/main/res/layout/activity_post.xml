@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostActivity">
+
+    <com.sothree.slidinguppanel.SlidingUpPanelLayout
+        android:id="@+id/post_uppanel_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        app:umanoPanelHeight="68dp"
+        app:umanoShadowHeight="4dp">
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            layout="@layout/post_main_panel"></include>
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="508dp"
+            android:layout_centerVertical="true"
+            layout="@layout/post_slidingpanel"></include>
+
+    </com.sothree.slidinguppanel.SlidingUpPanelLayout>
+</RelativeLayout>
